@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+<div id = "one" onclick = 'changeDivContent()'>One Page</div>
+
+<iframe src = 'two.html'> </iframe>
+
+<script>
+function changeDivContent() {
+var div = document.getElementById('one').innerHTML;
+if (div === 'One Page') {
+document.getElementById('one').innerHTML = "Hello";
+} else {
+document.getElementById('one').innerHTML = "One Page";
+}
+}
+</script>
+
+
+</body>
+</html>

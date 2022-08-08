@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #ff9933;
+}
+li {
+float: left;
+}
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+.bottomnavbar {
+ overflow: hidden;
+ background-color: #ff9933;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+.bottomnavbar a {
+float: right;
+ display: block;
+ color: #black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+button {
+float: right;
+}
+.columnlabel {
+float: left;
+width: 25%;
+margin-top: 10px;
+color: yellow;
+}
+.columninput {
+float: left;
+width: 75%;
+margin-top: 10px;
+}
+body {
+background-color: #00284d;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a class="Sign-Up">Sign-Up</a></li>
+</ul>
+<div class="center">
+<!--HTML Forms-->
+<form action="process.php" method="POST">
+<!--First name-->
+<div class="row">
+<div class="columnlabel">
+<label for="fname">First Name</label>
+</div>
+<div class="columninput">
+
+<input type="text" id="firstname" placeholder="Enter your first name">
+
+</div>
+</div>
+<!--First name-->
+<!--Last name-->
+<div class="row">
+<div class="columnlabel">
+<label for="lname">Last Name</label>
+</div>
+<div class="columninput">
+<input type="text" id="lastname" placeholder="Enter Last Name">
+</div>
+</div>
+<!--Last name-->
+
+<!--Screen name-->
+<div class="row">
+<div class="columnlabel">
+<label for="screenname">User name</label>
+</div>
+<div class="columninput">
+
+<input type="text" id="screenname" placeholder="Enter User Name" name="userOrScreenName">
+
+</div>
+</div>
+<!--Screen name-->
+
+<!--Date of birth-->
+<div class="row">
+<div class="columnlabel">
+<label for="birthdate">Date of Birth</label>
+</div>
+<div class="columninput">
+<select class="date">
+<option>Date<option>
+<option>1<option>
+<option>2<option>
+<option>3<option>
+<option>4<option>
+<option>5<option>
+<option>6<option>
+<option>7<option>
+<option>8<option>
+<option>9<option>
+<option>10<option>
+<option>11<option>
+<option>12<option>
+<option>13<option>
+<option>14<option>
+<option>15<option>
+<option>16<option>
+<option>17<option>
+<option>18<option>
+<option>19<option>
+<option>20<option>
+<option>21<option>
+<option>22<option>
+<option>23<option>
+<option>24<option>
+<option>25<option>
+<option>26<option>
+<option>27<option>
+<option>28<option>
+<option>29<option>
+<option>30<option>
+<option>31<option>
+</select>
+<select class="month">
+<option>Month<option>
+<option>January<option>
+<option>February<option>
+<option>March<option>
+<option>April<option>
+<option>May<option>
+<option>June<option>
+<option>July<option>
+<option>August<option>
+<option>September<option>
+<option>October<option>
+<option>November<option>
+<option>December<option>
+</select>
+<select class="year">
+<option>Year<option>
+<option>1990<option>
+<option>1991<option>
+<option>1992<option>
+<option>1993<option>
+<option>1994<option>
+<option>1995<option>
+<option>1996<option>
+<option>1997<option>
+<option>1998<option>
+<option>1999<option>
+<option>2000<option>
+<option>2001<option>
+<option>2002<option>
+<option>2003<option>
+<option>2004<option>
+<option>2005<option>
+<option>2006<option>
+<option>2007<option>
+<option>2008<option>
+<option>2009<option>
+</select>
+<!--Date of birth-->
+</div>
+
+<!--Gender-->
+<div class="row">
+<div class="columnlabel">
+<label for="birthdate">Gender</label>
+</div>
+<div class="columninput">
+<label style="color:white;">
+<input type="radio" value="Male" >Male
+</label>
+<label style="color:white;">
+<input type="radio" value="Female" >Female
+</label>
+</div>
+</div>
+<!--Gender-->
+
+</div>
+<!--Country-->
+<div class="row">
+<div class="columnlabel">
+<label for="country">Country</label>
+</div>
+<div class="columninput">
+<select class="year">
+<option>Country<option>
+<option>Afghanistan<option>
+<option>Albania<option>
+<option>Algeria<option>
+<option>Andorra<option>
+<option>Angola<option>
+<option>Antigua and Barbuda<option>
+<option>Argentina<option>
+<option>Armenia<option>
+<option>Australia<option>
+<option>Austria<option>
+<option>Azerbaijan<option>
+<option>Bahamas<option>
+<option>Bahrain<option>
+<option>Bangladesh<option>
+<option>Barbados<option>
+<option>Belarus<option>
+<option>Belgium<option>
+<option>Belize<option>
+<option>Benin<option>
+<option>Bhutan<option>
+<option>Bolivia<option>
+<option>Bosnia and Herzegovina<option>
+<option>Botswana<option>
+<option>Brazil<option>
+<option>Brunei<option>
+<option>Bulgaria<option>
+<option>Burkina Faso<option>
+<option>Burundi<option>
+<option>Côte d'Ivoire<option>
+<option>Cabo Verde<option>
+<option>Cambodia<option>
+<option>Cameroon<option>
+<option>Canada<option>
+<option>Central African Republic<option>
+<option>Chad<option>
+<option>Chile<option>
+<option>China<option>
+<option>Colombia<option>
+<option>Comoros<option>
+<option>Congo (Congo-Brazzaville)<option>
+<option>Costa Rica<option>
+<option>Croatia<option>
+<option>Cuba<option>
+<option>Cyprus<option>
+<option>Czechia (Czech Republic)<option>
+<option>Democratic Republic of the Congo<option>
+<option>Denmark<option>
+<option>Djibouti<option>
+<option>Dominica<option>
+<option>Dominican Republic<option>
+<option>Ecuador<option>
+<option>Egypt<option>
+<option>El Salvador<option>
+<option>Equatorial Guinea<option>
+<option>Eritrea<option>
+<option>Estonia<option>
+<option>Eswatini (fmr. "Swaziland")<option>
+<option>Ethiopia<option>
+<option>Fiji<option>
+<option>Finland<option>
+<option>France<option>
+<option>Gabon<option>
+<option>Greece<option>
+<option>Guatemala<option>
+<option>Guyana<option>
+<option>Haiti<option>
+<option>Hungary<option>
+<option>Ireland<option>
+<option>Japan<option>
+<option>Kazakhstan<option>
+<option>Lebanon<option>
+<option>Madagascar<option>
+<option>Marshall Islands<option>
+<option>Mongolia<option>
+<option>Nepal<option>
+<option>Pakistan<option>
+<option>Paraguay<option>
+<option>Philippines<option>
+<option>Saudi Arabia<option>
+<option>South Korea<option>
+<option>Thailand<option>
+<option>United Kingdom<option>
+<option>United States of America<option>
+<option>Uzbekistan<option>
+<option>Venezuela<option>
+<option>Vietnam<option>
+<option>Yemen<option>
+<option>Zambia<option>
+<option>Zimbabwe<option>
+</select>
+</div>
+</div>
+<!--Country-->
+
+<!--E-mail-->
+<div class="row">
+<div class="columnlabel">
+<label for="email">E-mail</label>
+</div>
+<div class="columninput">
+<input type="text" id="electronicmail" placeholder="Enter E-mail">
+</div>
+</div>
+<!--E-mail-->
+<!--Phone number-->
+<div class="row">
+<div class="columnlabel">
+<label for="phonenumber">Phone Number</label>
+</div>
+<div class="columninput">
+<input type="number" id="phonenumber" placeholder="Enter Phone">
+</div>
+</div>
+<!--Phone number-->
+<!--Password-->
+<div class="row">
+<div class="columnlabel">
+<label for="password">Password</label>
+</div>
+<div class="columninput">
+<input type="password" id="password">
+</div>
+</div>
+<!--Password-->
+<!--Confirm Password-->
+<div class="row">
+<div class="columnlabel">
+<label for="confirmpassword">Confirm Password</label>
+</div>
+<div class="columninput">
+<input type="password" id="confirmpassword">
+</div>
+</div>
+<!--Password-->
+
+<!-- try using div center as a container for the form to put the form in the center of the page-->
+<div class="bottomnavbar">
+<form action="process.php" method="POST">
+<input type="submit" id="btnRegister" value="Register" name="RegisterButton" />
+</form>
+</div>
+</form>
+</body>
+</html>

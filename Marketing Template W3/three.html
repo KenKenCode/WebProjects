@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<div id="divd">First</div>
+<button onclick='changeMe()'>Click It</button>
+
+<script>
+function changeMe() {
+    var div = document.getElementById('divd').innerHTML;
+    if (div === 'First') {
+        document.getElementById('divd').innerHTML = "Second";
+    } else {
+        document.getElementById('divd').innerHTML = "First";
+    }
+}
+
+</script>
+
+</body>
+</html>
